@@ -3,21 +3,20 @@
 #include <string>
 #include <vector>
 #include <fstream>
-using namespace std;
+#include <algorithm>
+#include <list>
+#include <chrono>
+#include <cmath>
+#include <thread>
 class tapes {
-public:
-	tapes();
-	void init_tape(string filename);
-	void sort_tape(string output);
-	void show_tape();
-	~tapes();
 private:
-	struct tape
-	{
-		int val;
-		struct tape* next;
-		struct tape* prev;
-	};
-	tape *tp;
+	std::list <int> tp{};
 	int read, record, rewind, shift;
+	std::string input, output;
+public:
+	tapes(std::string inputf, std::string outputf);
+	void init_tape();
+	void sorts();
+	void show_tape();
+	void add(int val);
 };

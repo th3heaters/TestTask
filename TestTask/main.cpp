@@ -1,8 +1,13 @@
 #include "init_tape.h"
 int main()
 {
-	tapes t;
-	t.init_tape("tape_input.txt");
-	t.sort_tape("tape_output.txt");
-	//t.show_tape();
+	std::string input, output;
+	std::cout << "входной файл: ";
+	std::cin >> input;
+	std::cout << "выходной файл ";
+	std::cin >> output;
+	tapes t(input, output);
+	t.init_tape();
+	t.sorts();
+	t.show_tape();
 }

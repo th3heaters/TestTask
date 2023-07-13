@@ -1,4 +1,4 @@
 delay read - 10
 delay rec - 10
-delay rewind - 20
+delay rewind - 100
 delay shift - 5
