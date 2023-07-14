@@ -19,4 +19,9 @@ public:
 	void sorts();
 	void show_tape();
 	void add(int val);
+	int getread();
+	int getrecord();
+	int getrewind();
+	int getshift();
+	std::list <int> getTape();
 };

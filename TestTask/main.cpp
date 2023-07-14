@@ -9,5 +9,5 @@ int main()
 	tapes t(input, output);
 	t.init_tape();
 	t.sorts();
-	t.show_tape();
+	//t.show_tape();
 }
